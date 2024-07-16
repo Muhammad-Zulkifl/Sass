@@ -1,0 +1,58 @@
+@import "./variables";
+@import "./media";
+
+main{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 30px 0;
+    
+    h1{
+        font-size: 4rem;
+        color: $lime;
+    }
+    h2{
+        font-size: 2.4rem;
+        color: $dark;
+    }
+    p{
+        font-size: 1rem;
+        color: $dark;
+        font-weight: 700;
+        padding-bottom: 2rem;
+    }
+    
+    button{
+        padding: 7px 15px;
+        border: none;
+        border-radius: 4px;
+        outline: none;
+        background: $lime;
+        color: $light;
+
+        &:hover{
+            opacity: 0.8;
+            background: $orangeRed;
+            transition: 0.3s ease;
+        }
+    }
+    .right{
+        img{
+            width: 60%;   
+            
+        }
+    }
+    @include responsive{
+        flex-direction: column;
+        .right{
+            display: flex;
+            justify-content: center;
+        }
+        img{
+            padding-top: 2rem;
+
+        }
+    }
+    
+}

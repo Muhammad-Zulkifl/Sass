@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.navbar ul, .navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  background: #f7f7f7;
+  justify-content: space-around;
+  height: 80px;
+  padding: 0 20px;
+}
+.navbar__logo {
+  text-decoration: none;
+  color: #222121;
+  font-size: 30px;
+}
+.navbar__bars img {
+  cursor: pointer;
+  display: none;
+}
+.navbar ul {
+  justify-content: space-between;
+  gap: 15px;
+}
+.navbar ul li {
+  list-style-type: none;
+  cursor: pointer;
+}
+.navbar ul li:hover {
+  color: #00cc66;
+  transition: all 0.3s ease;
+}
+.navbar ul button {
+  padding: 7px 15px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  background: #00cc66;
+  color: #f7f7f7;
+}
+.navbar ul button:hover {
+  opacity: 0.8;
+  background: #fb4b4e;
+  transition: 0.3s ease;
+}
+@media screen and (max-width: 640px) {
+  .navbar .navbar__bars img {
+    display: block;
+  }
+  .navbar ul {
+    display: none;
+  }
+}
+
+main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 30px 0;
+}
+main h1 {
+  font-size: 4rem;
+  color: #00cc66;
+}
+main h2 {
+  font-size: 2.4rem;
+  color: #222121;
+}
+main p {
+  font-size: 1rem;
+  color: #222121;
+  font-weight: 700;
+  padding-bottom: 2rem;
+}
+main button {
+  padding: 7px 15px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  background: #00cc66;
+  color: #f7f7f7;
+}
+main button:hover {
+  opacity: 0.8;
+  background: #fb4b4e;
+  transition: 0.3s ease;
+}
+main .right img {
+  width: 60%;
+}
+@media screen and (max-width: 640px) {
+  main {
+    flex-direction: column;
+  }
+  main .right {
+    display: flex;
+    justify-content: center;
+  }
+  main img {
+    padding-top: 2rem;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}/*# sourceMappingURL=main.css.map */

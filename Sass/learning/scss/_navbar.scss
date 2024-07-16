@@ -1,0 +1,70 @@
+@import "./variables";
+@import "./media";
+
+%flex-center{
+    display: flex;
+    align-items: center;
+    
+}
+
+.navbar{
+    background: $light;
+    @extend %flex-center;
+    justify-content: space-around;
+    height: 80px;
+    padding: 0 20px;
+
+    &__logo{
+        text-decoration: none;
+        color: $dark;
+        font-size: 30px;
+        
+
+    }
+    &__bars{
+        img{
+            cursor: pointer;
+            display: none
+        }
+    }
+    ul{
+        @extend %flex-center;
+        justify-content: space-between;
+        gap: 15px;
+        
+        li{
+        list-style-type: none;
+        cursor: pointer;
+
+            &:hover{
+            color: $lime;
+            transition: all 0.3s ease;
+            }
+        }
+        button{
+            padding: 7px 15px;
+            border: none;
+            border-radius: 4px;
+            outline: none;
+            background: $lime;
+            color: $light;
+
+            &:hover{
+                opacity: 0.8;
+                background: $orangeRed;
+                transition: 0.3s ease;
+            }
+        }
+    }
+    @include responsive{
+        .navbar__bars{
+            img{
+                display: block;
+            }
+        }
+        ul{
+            display: none;
+        }
+    }
+
+}
